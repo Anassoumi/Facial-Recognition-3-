@@ -1,0 +1,14 @@
+imageDir = "/Users/anastalib/PycharmProjects/OpencvPython/demoImages-master/known"
+
+for root, Dir, Files in os.walk(imageDir):
+    print(('my working folder :  ', root))
+    print(('my working Directories :  ', Dir))
+    print(('my working Files :  ', Files))
+
+    for file in Files:
+
+        print("your guys is :  ", file)
+        FullPathName = os.path.join(root, file)
+        print(FullPathName)
+        name = os.path.splitext(file)[0]
+        print(name)
